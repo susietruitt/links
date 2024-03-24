@@ -10,6 +10,7 @@
     
   </head>
 <body>
+  <div class = "items">
   <div class="banner">
     <img src="Headshot2021.jpg" alt="Susie Truitt headshot" class="banner-image">
   </div>
@@ -29,9 +30,13 @@
     }
     body{
       background-color: #fec7d7;
+      display: flex;
+      justify-content: center;
     }
     .name{
-      color: #0e172c
+      color: #0e172c;
+      display: flex;
+      justify-content: center;
     }
     .social-icons a{
       color: #fffffe;
@@ -39,14 +44,32 @@
     }
     .link{
       background-color: #d9d4e7;
+      display: flex;
+      align-items: center;
+      padding: 5px;
     }
     .link a {
       color: #a786df;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
     }
     .items{
       display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
     }
+    .banner{
+      display: flex;
+      justify-content: center;
+    }
+    .social-icons{
+      display: flex;
+      justify-content: space-around;
+    }
+    
 
   </style>
   
@@ -94,7 +117,7 @@
 
     <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/"">Telling Your Friends You're Moving to Arkansas</a>
   </div>
-
+</div>
   <!-- Etc, for as many links as you want -->
 </body>
 </html>
